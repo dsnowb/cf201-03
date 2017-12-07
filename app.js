@@ -71,3 +71,9 @@ for (var i = 0; i < favColors.length; ++i) {
   fcString += '\'' + favColors[i] + '\'\n';
 }
 alert('Possible options were: \n' + fcString);
+
+//build top ten list
+fcString = '';
+for (var i = 0; i < favColors.length; ++i) fcString += '<li> ' + favColors[i] + ' </li>\n';
+var fcList = document.getElementById('color_list');
+fcList.innerHTML = fcString;
